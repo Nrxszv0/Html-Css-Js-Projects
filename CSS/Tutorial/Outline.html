@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outline</title>
+    <link rel="stylesheet" type="text/css" href="TSytles.css">
+    <style>
+        p {outline-color:red;}
+
+        p.dotted {outline-style: dotted;}
+        p.dashed {outline-style: dashed;}
+        p.solid {outline-style: solid;}
+        p.double {outline-style: double;}
+        p.groove {outline-style: groove;}
+        p.ridge {outline-style: ridge;}
+        p.inset {outline-style: inset;}
+        p.outset {outline-style: outset;}
+
+        p.ex1 {
+            border: 1px solid black;
+            outline-style: solid;
+            outline-color: red;
+            outline-width: thin;
+        }
+
+        p.ex2 {
+            border: 1px solid black;
+            outline-style: solid;
+            outline-color: red;
+            outline-width: medium;
+        }
+
+        p.ex3 {
+            border: 1px solid black;
+            outline-style: solid;
+            outline-color: red;
+            outline-width: thick;
+        }
+
+        p.ex4 {
+            border: 1px solid black;
+            outline-style: solid;
+            outline-color: red;
+            outline-width: 4px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="Background.html">Background</a>
+        <a href="Border.html">Borders</a>
+        <a href="Outline.html">Outline</a>
+        <a href="Text.html">Text</a>
+        <a href="Font.html">Font</a>
+        <a href="Icons.html">Icons</a>
+        <a href="Link.html">Links</a>       
+        <a href="List.html">List</a>       
+        <a href="Table.html">Table</a>       
+        <a href="Display.html">Display</a>       
+        <a href="Position.html">Position</a>       
+        <a href="Overflow.html">Overflow</a>       
+
+
+
+        
+    </nav>
+    <h1 style="text-align: center;">Outline Properties</h1>
+    <p>
+        <ul style="list-style-type: none;">
+            <li><a href="#Style">Style</a></li>
+
+            <li><a href="#Width">Width</a></li>
+            <li><a href="#Color">Color</a></li>
+            <li><a href="#Shorthand">Shorthand</a></li>
+            <li><a href="#Offset">Offset</a></li>
+        </ul>
+    </p>
+        <h1>Outline</h1>
+        <p>An outline is a line that is drawn around elements, OUTSIDE the borders, to make the element <q>stand out</q>.
+        Outline has the following properties:
+    <ul>
+        <li>outline-style</li>
+        <li>outline-color</li>
+        <li>outline-width</li>
+        <li>outline-offset</li>
+        <li>outline</li>
+    </ul></p>
+    
+    <h2 id="Style">Outline-Style</h2>
+    <p>The outline-style property specifies the outline style. It can have on of the following values:
+        <ul>
+            <li>dotted - Defines a dotted outline</li>
+            <li>dashed-defines a dashed outline</li>
+            <li>solid - Defines a solid outline</li>
+            <li>double- defines a double outline</li>
+            <li>groove- defines a 3D grooved outline</li>
+            <li>ridge- defines a 3D ridged outline</li>
+            <li>inset- defines a 3D inset outline</li>
+            <li>outset- defines a 3D outset outline</li>
+            <li>none- defines no outline</li>
+            <li>hidden- defines a hidden outline</li>
+
+        </ul>
+    </p>
+    <p class="dotted">A dotted outline</p>
+    <p class="dashed">A dashed outline</p>
+    <p class="solid">A solid outline</p>
+    <p class="double">A double outline</p>
+    <p class="groove">A groove outline. The effect depends on the outline-color value.</p>
+    <p class="ridge">A ridge outline. The effect depends on the outline-color value.</p>
+    <p class="inset">An inset outline. The effect depends on the outline-color value.</p>
+    <p class="outset">An outset outline. The effect depends on the outline-color value.</p>
+
+    <h2>Outline-Width</h2>
+    <p>The outline-width property specifies the width of the outline, and can be thin(1px), medium(3px), thick(5px), or a specific size </p>
+    <p class="ex1">A thin outline.</p>
+    <p class="ex2">A medium outline.</p>
+    <p class="ex3">A thick outline.</p>
+    <p class="ex4">A 4px thick outline.</p>
+
+    <h1 style="font-size: 400px">Outline is basically a border for the border.</h1>
+
+
+
+</body>
+</html>

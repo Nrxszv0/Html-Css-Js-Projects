@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float and Clear</title>
+    <link rel="stylesheet" type="text/css" href="TSytles.css">
+    <script src="https://kit.fontawesome.com/f9b87e56f5.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <style>
+      .fright{
+          float:right;
+      }
+      .fleft{
+          float:left;
+      }
+      .fnone {
+          float:none;
+      }
+      .d1 {
+          float:left;
+          width:100px;
+          height:50px;
+          margin:10px;
+          border: 3px dotted blue;
+      }
+
+      .d2 {
+          border: 1px solid red;
+          height:50px;
+      }
+
+      .d3 {
+          float:left;
+          width:100px;
+          height:50px;
+          margin:10px;
+          border: 3px dotted blue;
+      }
+
+      .d4 {
+          border: 1px solid red;
+          height:50px;
+          clear:left;
+      }
+
+      .clearfix::after {
+          clear:both;
+          display:table;
+          content:"";
+      }
+      div {
+          border: 3px solid green;
+          padding:5px;
+      }
+      section{
+          box-sizing: border-box;
+          color:black;
+
+      }
+      .box {
+          float:left;
+          width: 16%;
+          padding: 75px;
+      }
+      #b1 {
+          background-color:rgb(255, 0, 0);
+      }
+      #b2 {
+          background-color:rgb(255, 128, 0);
+      }
+      
+      #b3 {
+          background-color:rgb(255, 255, 0);
+      }
+
+      #b4 {
+          background-color:rgb(0, 255, 0);
+      }
+      #b5 {
+          background-color:rgb(0, 255, 255);
+      }
+
+
+      #b6 {
+          background-color:rgb(0, 0, 255);
+      }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="Background.html">Background</a>
+        <a href="Border.html">Borders</a>
+        <a href="Outline.html">Outline</a>
+        <a href="Text.html">Text</a>
+        <a href="Font.html">Font</a>
+        <a href="Icons.html">Icons</a>
+        <a href="Link.html">Links</a>       
+        <a href="List.html">List</a>       
+        <a href="Table.html">Table</a>       
+        <a href="Display.html">Display</a>       
+        <a href="Position.html">Position</a>       
+        <a href="Overflow.html">Overflow</a>      
+        <a href="FloatClear.html">Float and Clear</a>       
+        <a href="Combinators.html">Combinators</a>
+
+
+
+
+      
+        
+    </nav>    
+        <h1>Float and Clear</h1>
+        <h2>Float</h2>
+        <p>the float property is used for positioning and formatting. It can have the values of
+            <ul>
+                <li>left- elements float to left of its container</li>
+                <li>right- elements float to right of its container</li>
+                <li>none- element does not float. This is default</li>
+                <li>inherit- element inherits the float value of its parent</li>
+                
+            </ul>
+
+        </p>
+        <h3>float:right</h3>
+        <p> <img src="Images/Pic.png" class="fright" alt="pic" width="100" height="100">
+
+           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac...
+            </p>
+
+            <h3>float:left</h3>
+        <p> <img src="Images/Pic.png" class="fleft" alt="pic" width="100" height="100">
+
+           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac...
+            </p>
+
+            <h3>float:none</h3>
+        <p> <img src="Images/Pic.png" class="fnone" alt="pic" width="100" height="100">
+
+           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac...
+            </p>
+
+        <h2>Clear</h2>
+        <p>The clear property specifies what elements can float beside the cleared element and on which side. It can have the values of<ul>
+            <li>none- Floating elements on bot sides. Default</li>
+            <li>left- no floating elements on left side</li>
+            <li>right- no floating elements on right side</li>
+            <li>both- no floating elements on either side</li>
+            <li>inherit- element inherits value of parent</li>        
+        </ul></p>
+        <h3>Without Clear</h3>
+        <div class="d1">d1</div>
+        <div class="d2">d2- D2 is after d1. Since d1 floats to the left the text in d2 flows around d1.</div>
+        <br>
+        <br>
+        
+        <h3>With Clear</h3>
+        <div class="d3">d3</div>
+        <div class="d4">d4- clear:left; moves div4 down below the floating d3. The value of left clears elements floated to the  left. You could also clear right and both.</div>
+        
+
+        <h3>Clearfix hack</h3>
+        <p>If an element is taller than the element containing it and is floated it will overflow outside of its container.</p>
+        <h4>With Clearfix</h4>
+        <div>
+        <img src="Images/Pic.png" width="100" height="100" class="fright">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum... </p>
+
+        </div>
+
+    
+        
+        <div class="clearfix">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum... </p>
+
+        <img src="Images/Pic.png" width="100" height="100" class="fright">
+            
+        </div>
+
+
+
+        <h2>Equal Width Boxes</h2>
+        <section class="clearfix">
+           <section class="box" id="b1">
+               <p>Lorem ipsum dolor sit, amet</p>
+           </section>   
+           
+           <section class="box" id="b2">
+                <p>Lorem ipsum dolor sit, amet</p>
+            </section> 
+
+            <section class="box" id="b3">
+                <p>Lorem ipsum dolor sit, amet</p>
+            </section> 
+
+            <section class="box" id="b4">
+                <p>Lorem ipsum dolor sit, amet</p>
+            </section> 
+
+            <section class="box" id="b5">
+            <p>Lorem ipsum dolor sit, amet</p>
+            </section> 
+
+            <section class="box" id="b6">
+            <p>Lorem ipsum dolor sit, amet</p>
+            </section> 
+
+        </section>
+
+
+        <h1>Summary</h1>
+        <p>box-sizing&ensp; 	Defines how the width and height of an element are calculated: should they include padding and borders, or not 
+            clear&ensp;  	Specifies what elements can float beside the cleared element and on which side<br>
+            float&ensp;  	Specifies how an element should float<br>
+            overflow&ensp;  	Specifies what happens if content overflows an element's box<br>
+            overflow-x&ensp;  	Specifies what to do with the left/right edges of the content if it overflows the element's content area<br>
+            overflow-y&ensp;  	Specifies what to do with the top/bottom edges of the content if it overflows the element's content area</p>
+
+</body>
+</html>

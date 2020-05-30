@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display</title>
+    <link rel="stylesheet" type="text/css" href="TSytles.css">
+
+    <style>
+       .blk {
+           background-color: blue;
+           display:block;
+       }
+       a.blk:visited {
+           color:white;
+       }
+       .spn {
+           background-color:blue;
+       }
+       li {
+           display: inline;
+       }
+       ul {
+           list-style: disc;
+       }
+       .dno {
+           display:none;
+       }
+       .hno {
+           visibility:hidden;
+       }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="Background.html">Background</a>
+        <a href="Border.html">Borders</a>
+        <a href="Outline.html">Outline</a>
+        <a href="Text.html">Text</a>
+        <a href="Font.html">Font</a>
+        <a href="Icons.html">Icons</a>
+        <a href="Link.html">Links</a>       
+        <a href="List.html">List</a>       
+        <a href="Table.html">Table</a>       
+        <a href="Display.html">Display</a>       
+        <a href="Position.html">Position</a>       
+        <a href="Overflow.html">Overflow</a>       
+
+
+        
+    </nav>    
+        <h1>Display</h1>
+        <p>The display property specifies how an element is displayed. Each element has a default display value depending on the element type. The default display value for most is block or inline. </p>
+        <h2>Block Level</h2>
+        <p class="blk">They take up the full available width </p>
+        <h2>Inline </h2>
+        <p><span class="spn">They don't start on a new line and only take up necessary space.</span></p>
+        <h2>Display:none;</h2>
+        <p>JavaScript uses display:none; to hide and show elements without deleting and recreating them. </p>
+        <h2>Override the Default Display Value</h2>
+        <p>Changing an inline element to a block element or vice versa can make a page look a specific way. </p>
+        <h3>Inline li -> horizontal menus</h3>
+        <ul>
+            <li>Chicken</li>
+            <li>Fish</li>
+            <li>Carrots</li>
+            <li>Apples</li>
+        </ul>
+        <a href="Background.html" class="blk">Block</a>
+        <h2>Display:none</h2>
+        <p>When display is set to none the element will be hidden and the page will be displayed like the element isn't there.</p>
+        <h3 class="dno">display:none</h3>
+        <p>Previous element had display:none</p>
+        <h2>Visibility:hidden</h2>
+        <p>Hidden elements will not be visible but will still affect the layout</p>
+        <h3 class="hno">visibility:hidden</h3>
+        <p>Previous element had visibility:hidden</p>
+
+        <h1>Summary</h1>
+        <p>display&ensp; 	Specifies how an element should be displayed<br>
+            visibility&ensp; 	Specifies whether or not an element should be visible</p>
+
+
+        
+        
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflow</title>
+    <link rel="stylesheet" type="text/css" href="TSytles.css">
+    <script src="https://kit.fontawesome.com/f9b87e56f5.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <style>
+        div {
+        width:200px;
+           height:50px;
+           background-color:green;
+        }
+       .visible {
+           margin-bottom: 80px;
+           overflow: visible;
+           
+       }
+
+       .hidden {
+           overflow: hidden;
+           
+       }
+
+       .scroll {
+           overflow:scroll;
+       }
+
+       .auto {
+           overflow:auto;
+       }
+       .xy {
+           width: 330px;
+           overflow-x: hidden;
+           overflow-y: scroll;
+       }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="Background.html">Background</a>
+        <a href="Border.html">Borders</a>
+        <a href="Outline.html">Outline</a>
+        <a href="Text.html">Text</a>
+        <a href="Font.html">Font</a>
+        <a href="Icons.html">Icons</a>
+        <a href="Link.html">Links</a>       
+        <a href="List.html">List</a>       
+        <a href="Table.html">Table</a>       
+        <a href="Display.html">Display</a>       
+        <a href="Position.html">Position</a>       
+        <a href="Overflow.html">Overflow</a>       
+        <a href="FloatClear.html">Float and Clear</a>       
+
+
+
+      
+        
+    </nav>    
+        <h1>Overflow</h1>
+    <p>The overflow property specifies whether to clip the content or add scrollbars when the content of an element is too big. The property has the values of: 
+        <ul>
+            <li>visible- the default value, the overflow is not clipped, it renders outside the element's box.</li>
+            <li>hidden- the overflow is clipped and the rest of the content is invisible</li>
+            <li>scroll- the overflow is clipped and a scrollbar is added.</li>
+            <li>auto- similar to scroll but only adds a scrollbar when necessary.</li>            
+        </ul>
+
+        
+    </p>
+    <h2>Visible</h2>
+    <div class="visible">
+        <p>You can use the overflow property when you want to have better control of the layout. The overflow property specifies what happens if content overflows an element's box.
+            </p>
+    </div>
+
+    <h2>Hidden</h2>
+    <div class="hidden">
+        <p>You can use the overflow property when you want to have better control of the layout. The overflow property specifies what happens if content overflows an element's box.</p>
+    </div>
+
+    <h2>Scroll</h2>
+    <div class="scroll">
+        <p>You can use the overflow property when you want to have better control of the layout. The overflow property specifies what happens if content overflows an element's box.</p>
+    </div>
+
+    <h2>Auto</h2>
+    <div class="auto">
+        <p>You can use the overflow property when you want to have better control of the layout. The overflow property specifies what happens if content overflows an element's box.</p>
+    </div>
+
+    <h2>Overflow X and Y</h2>
+    <p>The overflow-x and overflow-y properties specify whether to change the overflow of content horizontally, vertically, or both.
+        overflow-x specifies what to do with the left/right edges. overflow-y specifies what to do with the top and bottom edges. 
+    </p>
+    <div class="xy">
+        The overflow-x and overflow-y properties specify whether to change the overflow of content horizontally, vertically, or both.
+        overflow-x specifies what to do with the left/right edges. overflow-y specifies what to do with the top and bottom edges. 
+    </div>
+    
+    <h1>Summary</h1>
+    <p>overflow&emsp; 	Specifies what happens if content overflows an element's box<br>
+        overflow-x&emsp; 	Specifies what to do with the left/right edges of the content if it overflows the element's content area<br>
+        overflow-y&emsp; 	Specifies what to do with the top/bottom edges of the content if it overflows the element's content area</p>
+</body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-Elements</title>
+    <link rel="stylesheet" type="text/css" href="TSytles.css">
+
+    <style>
+        
+        p.fl::first-line {
+            color:red;
+            font-variant:small-caps;
+        }
+        p.fletter::first-letter {
+            color:red;
+            font-size:200%;
+            border:2px solid black;
+            background-color: rgb(255, 217, 0);
+            border-radius: 52px;
+        }
+
+        p.before::before {
+            content: url("Images/Pic.png");
+            
+            
+        }
+
+        p.after::after {
+            content: url("Images/Pic.png");
+            
+            
+        }
+        p.selection::selection {
+            color:red;
+            background-color:blue;
+            border:2px solid rgb(255, 217, 0);
+            cursor: crosshair;
+            
+            
+        }
+    </style>
+</head>
+<body>
+    
+    <p id="FCH">This is some text.</p>
+        <p>This is some text.</p> 
+    <nav>
+        <a href="Background.html">Background</a>
+        <a href="Border.html">Borders</a>
+        <a href="Outline.html">Outline</a>
+        <a href="Text.html">Text</a>
+        <a href="Font.html">Font</a>
+        <a href="Icons.html">Icons</a>
+        <a href="Link.html">Links</a>       
+        <a href="List.html">List</a>       
+        <a href="Table.html">Table</a>       
+        <a href="Display.html">Display</a>       
+        <a href="Position.html">Position</a>       
+        <a href="Overflow.html">Overflow</a>      
+        <a href="FloatClear.html">Float and Clear</a>       
+        <a href="Combinators.html">Combinators</a>
+        <a href="PClass.html">Pseudo-Classes</a>
+        <a href="PElements.html">Pseudo-Elements</a>
+        <a href="Opacity.html">Opacity</a>
+
+
+
+
+
+      
+        
+    </nav>   
+    
+        <h1>Pseudo-Elements</h1>
+        <p>A pseudo element is used to style specified parts of an element. They use a double colon to distinguish from single colon pseudo classes. It can be used to <ul>
+            <li>Style the first letter or line of an element.</li>
+            <li>Insert content before or after an element's content. </li>
+        </ul></p>
+
+        <h2>::first-line</h2>
+        <p>The properties it applies to are <ul>
+            <li>font</li>
+            <li>color</li>
+            <li>background</li>
+            <li>word-spacing</li>
+            <li>letter-spacing</li>
+            <li>text-decoration</li>
+            <li>vertical-align</li>
+            <li>text-transform</li>
+            <li>line-height</li>
+            <li>clear</li>
+        
+        </ul></p>
+        <p class="fl">The ;;first-line adds a special style to the first line of a text. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos fugiat aut in ut voluptates illo nesciunt error corporis atque, molestiae perferendis temporibus deserunt adipisci veritatis, doloremque dignissimos iste laboriosam sit, repellat consectetur praesentium.</p>
+        
+        
+        <h2>::first-letter</h2>
+        <p class="fletter">The first letter is different. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt dignissimos dolorum omnis reprehenderit consectetur possimus velit maiores, dolor nam? Amet, quia ab.(</p>
+        
+        <h2>::before</h2>
+        <p>The ::before pseudo element can insert content before an elements content</p>
+        <p class="before">::before</p>
+
+        <h2>::after</h2>
+        <p>::after can insert content after an element</p>
+        <p class="after">::after</p>
+
+        <h2>::selection</h2>
+        <p>It matches the portion of an element selected by the user. The applicable properties are color, background, cursor, and outline.</p>
+        <p class="selection">Highlight me!!! ;) ::selection  Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum delectus exercitationem quam recusandae aliquid eos, veritatis placeat quaerat esse voluptatibus animi, velit cupiditate corporis dolor ullam eius tenetur maiores! Perferendis quia sit iste provident? Dicta quisquam id minus doloremque repudiandae similique, veritatis iste rem neque?</p>
+
+
+
+
+        
+</body>
+</html>

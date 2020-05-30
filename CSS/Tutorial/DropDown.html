@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drop Down</title>
+    <link rel="stylesheet" type="text/css" href="TSytles.css">
+
+    <style>
+        .dropbtn {
+            background-color: green;
+            color:white;
+            padding: 15px;
+            font-size: 15px;
+            border:none;
+            cursor:pointer;
+            width: 100px;
+        }
+
+        .dropdown {
+            position: relative;
+            display:inline-block;
+
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: gray;
+            z-index: 1;
+            width: 100px;
+        }
+        .dropdown-content a {
+            color:black;
+            padding: 15px;
+            text-decoration: none;
+            display:block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: blue;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown:hover .dropbtn {
+           background-color: darkgreen;
+        }
+
+
+
+    </style>
+
+    
+</head>
+<body>
+    
+   
+    <nav>
+        <a href="Background.html">Background</a>
+        <a href="Border.html">Borders</a>
+        <a href="Outline.html">Outline</a>
+        <a href="Text.html">Text</a>
+        <a href="Font.html">Font</a>
+        <a href="Icons.html">Icons</a>
+        <a href="Link.html">Links</a>       
+        <a href="List.html">List</a>       
+        <a href="Table.html">Table</a>       
+        <a href="Display.html">Display</a>       
+        <a href="Position.html">Position</a>       
+        <a href="Overflow.html">Overflow</a>      
+        <a href="FloatClear.html">Float and Clear</a>       
+        <a href="Combinators.html">Combinators</a>
+        <a href="PClass.html">Pseudo-Classes</a>
+        <a href="PElements.html">Pseudo-Elements</a>
+        <a href="Opacity.html">Opacity</a>
+        <a href="NavBar.html">Nav Bar</a>
+        <a href="DropDown.html">Drop Down</a>
+        <a href="DropDownNavBar.html">Drop Down Nav Bar</a>
+
+
+        
+    </nav>   
+    
+        <h1>Drop Down</h1>
+        <div class="dropdown">
+            <button class="dropbtn">Dropdown</button>
+            <div class="dropdown-content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+            </div>
+        </div>
+
+        
+
+
+        
+</body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <link rel="stylesheet" type="text/css" href="TSytles.css">
+    <script src="https://kit.fontawesome.com/f9b87e56f5.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <style>
+       .static {
+           position:static;
+       }
+       .relative {
+           position:relative;
+       }
+       .fixed {
+           position:fixed;
+           top:0;
+           right:0;
+           border: 2px solid green;
+           font-size: 50px;
+       }
+
+       .rel1 {
+           position:relative;
+           width:400px;
+           height:200px;
+           border: 3px solid green;
+       }
+       .absolute {
+            position:absolute;
+            top:50px;
+            right:0;
+            width:200px;
+            height:100px;
+            border: 3px solid green;
+       }
+
+       .sticky {
+           position:sticky;
+           top:0;
+           padding:5px;
+           border: 2px solid blue;
+           background-color: gold;
+
+       }
+       .zx {
+           
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        z-index: -1;
+       }
+       
+    </style>
+</head>
+<body>
+    <h1 style="margin:0;">Heading</h1>
+    <img src="Images/Pic.png" alt="pic" width="50" height="50" class="zx">
+
+    <p>Because the image has a z-index of -1 it is placed behind the text.</p>
+    <nav>
+        <a href="Background.html">Background</a>
+        <a href="Border.html">Borders</a>
+        <a href="Outline.html">Outline</a>
+        <a href="Text.html">Text</a>
+        <a href="Font.html">Font</a>
+        <a href="Icons.html">Icons</a>
+        <a href="Link.html">Links</a>       
+        <a href="List.html">List</a>       
+        <a href="Table.html">Table</a>       
+        <a href="Display.html">Display</a>  
+        <a href="Position.html">Position</a>       
+        <a href="Overflow.html">Overflow</a>       
+        
+    </nav>    
+        <h1>Position</h1>
+        <p>The position property specifies the type of positioning method used for an element. There are five values: <ul>
+            <li>static</li>
+            <li>relative</li>
+            <li>fixed</li>
+            <li>absolute</li>
+            <li>sticky</li>
+        </ul>Elements are positioned using the top, bottom, left, and right properties. These properties will not work unless the position property is set first. They work differently depending on position value.</p>
+        <h2>Static</h2>
+        <p>An element with position:static is always positioned according to the normal page flow.            
+        </p>
+        <div class="static">
+            <p>position:static;</p>
+        </div>
+        
+        <h2>Relative</h2>
+        <p>An element with position:relative; is positioned relative to its normal position. </p>
+        <div class="relative">
+            <p>position:relative;</p>
+        </div>
+
+        <h2>Fixed</h2>
+        <p>An element with position:fixed; is positioned relative to the viewport. This means it stays in the same place even if the page is scrolled.</p>
+        <div class="fixed">
+            <p>position:fixed;</p>
+        </div>
+        <h2>Absolute</h2>
+        <p>An element with position:absolute; is positioned relative to the nearest positioned ancestor, instead of positioned relative to the viewport, like fixed.</p>
+        <div class="rel1">
+            position:relative;
+            <div class="absolute">
+                position:absolute;
+            </div>
+        </div>
+        
+        <h2>Sticky</h2>
+        <p>An element with position:sticky; is positioned based on the user's scroll position. It toggles between relative and fixed depending on the scroll position.</p>
+        <div class="sticky">
+            <p>position:sticky;</p>
+        </div>
+
+
+        <h2>Overlapping Elements</h2>
+        <p>The z-index property specifies the stack order of an element. It can have a positive or negative stack order.</p>
+
+        <h1>Summary</h1>
+        <p>bottom&ensp; 	Sets the bottom margin edge for a positioned box<br>
+            clip&ensp; 	Clips an absolutely positioned element<br>
+            left&ensp; 	Sets the left margin edge for a positioned box<br>
+            position&ensp; 	Specifies the type of positioning for an element<br>
+            right&ensp; 	Sets the right margin edge for a positioned box<br>
+            top&ensp; 	Sets the top margin edge for a positioned box<br>
+            z-index&ensp; 	Sets the stack order of an element</p>
+
+
+
+        
+</body>
+</html>
